@@ -16,6 +16,10 @@
     ***
     GIT PULL: -git pull is used to get the latest code from github
 
+    -when we use the computer terminal we should get credential typing username and password first to have access to the remote repository
+***. git config credential.username "github username"
+***. git config credential.password "github password"
+
     ---------------DAY 2---------------------------
 What do you remember from the last class?
 *What is GIT?
@@ -53,6 +57,16 @@ git pull does fetching and merging in one step
 but git merge will only does merging. we use use git merge after git fetch
 git pull = git fetch + git merge
 ---------------
+
+GIT CONFLICT?
+-Conflict happens when we merge the code.
+-Scenario:
+    - add Notes10.txt with line 1 message 'Meryem's code'
+    - add Notes10.txt with line 1 message 'Ahmet's code' then commit then push then we got error
+    - pull the code then we got Conflict
+    - then we manually fixed the Conflict
+    - then committed and pushed 
+        -git add .
+        -git commit -m "resolved conflict"
+        -git push
 10:51
-***. git config credential.username "github username"
-***. git config credential.password "github password"
